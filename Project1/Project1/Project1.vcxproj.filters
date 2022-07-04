@@ -76,4 +76,9 @@
       <Filter>소스 파일\Section 1_준비\Week 1</Filter>
     </Text>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="과제3_ 디버깅 툴 이용하기.cpp">
+      <Filter>소스 파일\Section 1_준비</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

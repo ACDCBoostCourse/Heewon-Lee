@@ -141,6 +141,9 @@
   <ItemGroup>
     <Text Include="과제 2_커밋 및 푸시하기.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="과제3_ 디버깅 툴 이용하기.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
