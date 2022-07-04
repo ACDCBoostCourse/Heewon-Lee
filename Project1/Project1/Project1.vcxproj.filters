@@ -71,4 +71,9 @@
       <UniqueIdentifier>{3817df7e-3541-4d4e-9fe1-71e6cb418699}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="과제 2_커밋 및 푸시하기.txt">
+      <Filter>소스 파일\Section 1_준비\Week 1</Filter>
+    </Text>
+  </ItemGroup>
 </Project>
