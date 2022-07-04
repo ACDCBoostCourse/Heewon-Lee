@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Algorithm">
+      <UniqueIdentifier>{3fdb91c3-58da-4de0-a8e7-6f82b2f0477e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Algorithm\Week 8">
+      <UniqueIdentifier>{1d6e115a-d2be-4f9d-ade9-7f79d842c234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Algorithm\Week 7">
+      <UniqueIdentifier>{ac39c065-e41e-4e50-825d-0eb16aeed2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Algorithm\Week 6">
+      <UniqueIdentifier>{2adb6b1f-fffc-4f7d-ba53-5a2d6ab3bda4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Algorithm\Week 5">
+      <UniqueIdentifier>{6d5a5788-446c-4d63-923e-e7092ebc5ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Algorithm\Week 4">
+      <UniqueIdentifier>{43ff624b-3108-45ef-8c99-2ea2ab2f2c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Algorithm\Week 3">
+      <UniqueIdentifier>{6ca2ea26-78c2-4d16-880d-d0e98ff67305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Algorithm\Week 2">
+      <UniqueIdentifier>{9e04e041-71ff-406e-bc5e-7b8d04722bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 1_준비">
+      <UniqueIdentifier>{d802e070-a698-4360-a9d0-15cb736cc0dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 1_준비\Week 2">
+      <UniqueIdentifier>{ea78fcb3-36da-4b42-9d19-18a662d3b26c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 1_준비\Week 1">
+      <UniqueIdentifier>{12c4aefd-9ae2-415b-a913-f4089bb4f7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 1_준비\Week 1\과제 4_디버깅 툴 연습하기">
+      <UniqueIdentifier>{0f332583-b26a-4831-8848-15c658dc3875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 1_준비\Week 1\과제 3_디버그하기">
+      <UniqueIdentifier>{09534c81-2c33-4b13-8252-2f1e728eb9c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 1_준비\Week 1\과제 2_커밋하기">
+      <UniqueIdentifier>{7cd6643e-aaab-4bcd-a26a-546c37b6750f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 1_준비\Week 1\과제 1_이쁘게 폴더링 하기">
+      <UniqueIdentifier>{9d691452-aa1a-4af0-a668-3deea5ce2c9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 2_Memory">
+      <UniqueIdentifier>{6d60fa0c-373e-48f7-96d3-eae6dc7e234f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 2_Memory\Week 5">
+      <UniqueIdentifier>{e39a58ae-771d-492d-8843-e71890954099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 2_Memory\Week 4">
+      <UniqueIdentifier>{c3385d1a-3f55-4190-b3a4-857fff63a350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 2_Memory\Week 3">
+      <UniqueIdentifier>{1ef6bca6-9de8-4a8e-9925-2b90790ee9b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 3_OOP">
+      <UniqueIdentifier>{676335bf-0e5e-471d-a570-0bd7af9df270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 3_OOP\Week 7">
+      <UniqueIdentifier>{4c9b9b24-8260-4647-a9e8-c0e4b30e1c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 3_OOP\Week 8">
+      <UniqueIdentifier>{8d33f5dd-09f3-49a0-aef2-fe531396d1c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Section 3_OOP\Week 6">
+      <UniqueIdentifier>{191fd6b8-a981-4364-bdea-281962273541}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
