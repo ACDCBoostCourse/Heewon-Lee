@@ -1,0 +1,13 @@
+1. Pointer vs Reference
+pointer: 자유롭게 움직여 변수를 자유롭게 바꿔가며 가리킬 수 있음
+refenrence: 한 번만 할당, 메모리 해당 위치에 대한 참조만 가능
+
+2. Call by Pointer vs Call by Reference
+call by pointer: 포인터를 사용, c, c++에서 가능
+void swap(int *, int *);
+swap(&a, &b);
+void swap(int *pa, int *pb)
+call by reference: 참조자를 사용, c++에서만 가능(.cpp), object의 다른 이름
+void swap(int &, int &);
+swap(a, b);
+void swap(int &ra, int &rb)
