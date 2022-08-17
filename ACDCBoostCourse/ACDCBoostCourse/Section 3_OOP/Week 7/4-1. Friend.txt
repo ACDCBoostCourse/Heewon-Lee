@@ -1,0 +1,9 @@
+friend
+- 클래스 간 멤버 변수 공유를 위해 사용.
+- 다른 타입의 개체 접근을 가능케 함.
+- 객체지향적 설계(캡슐화 고려), 데이터 보호에 유의.
+- 함수나 클래스 앞에 선언.
+   ex1) friend void sayName(People p);	// friend 함수
+   ex2) friend class PeopleB;			// friend 클래스
+- friend를 선언한 함수/클래스에선 접근 제어 지시자(private, protected, public)의 영향 X
+  friend로 선언된 클래스 : 모든 멤버와 메서드에 접근 가능.

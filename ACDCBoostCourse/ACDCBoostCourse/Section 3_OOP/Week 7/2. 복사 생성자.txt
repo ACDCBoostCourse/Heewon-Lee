@@ -1,0 +1,18 @@
+복사 생성자를 오버로딩(재정의)하면 객체 복사 시 얕은 복사를 방지한다.
+--------------------------------------------------------------------
+String(const String &rhs){	// const: 기존의 멤버 변수값이 바뀌지 않도록 
+	// strData = rhs.strData;	=> 얕은 복사: 메모리 해제가 두번 됨
+	strData = new char[rhs.len +1];		// null문자를 고려하여 +1
+	cout << "strData 할당 : " << (void*)strData << endl;
+	strcpy(strData, rhs.strData);		// 깊은 복사
+	len = rhs.len;						// 깊은 복사
+}
+--------------------------------------------------------------------
+int main(){
+	String s1("안녕");
+	String s2(s1); // 복사 생성자
+
+	cout << s1.GetStrData() << endl;	// 안녕
+	cout << s2.GetStrData() << endl;	// 안녕
+	}
+--------------------------------------------------------------------

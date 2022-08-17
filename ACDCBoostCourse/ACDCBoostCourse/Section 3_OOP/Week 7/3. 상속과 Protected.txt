@@ -1,0 +1,15 @@
+접근 제어 지시자
+
+1. private: 외부에서 접근 불가
+ [private 상속] class Base : private Parent { };
+  private 제한자보다 접근 범위가 넓은 멤버(protected,public)는 모두 private 제한자로 바꾸어 상속.
+
+2. protected: 외부에서 접근 불가, 파생 클래스에서 접근 가능
+ [protected 상속] class Base : protected Parent { };
+  protected 제한자보다 접근 범위가 넓은 멤버(public)는 모두 protected 제한자로 바꾸어 상속.
+
+3. public: 어디서나 접근 가능
+ [public 상속] class Base : public Parent { };
+  모든 멤버가 바뀌지 않고 상속.
+
+" private < protected < public "
