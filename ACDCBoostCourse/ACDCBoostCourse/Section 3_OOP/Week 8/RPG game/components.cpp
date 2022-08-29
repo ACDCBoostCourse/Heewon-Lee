@@ -1,70 +1,61 @@
-// components.h에서 선언한 메서드를 구현.
-// class 생성자는 default 생성자로 구현하고,
-// 이후 필요에 따라 추가적인 생성자 구현.
-
 #include "components.h"
+#include <cstdlib>
+#include <ctime>
 
-class User {
-public:
-	string const name;
-	User(string name, int level, int money, int luck) {
-		this->level = level;
-		this->money = money;
-		this->luck = luck;
+bool User::isBurning = false;
+
+User::User(const string name, int level, int money, int luck) {
+	this->name = name;
+	this->level = level;
+	this->money = money;
+	this->luck = luck;
+}
+string User::Username() { return name; }
+
+void User::defend(){ cout << Username() << " : 방어" << endl; }
+void Warrior::attack() { cout << Username() << " : 검 휘두르기" << endl; }
+void Magician::attack() { cout << Username() << " : 마법 쓰기" << endl; }
+void Archer::attack() { cout << Username() << " : 활 쏘기" << endl; }
+
+int Item::GetPerformance() { return performance; }
+
+Item::Item(string name, int performance) {
+	this->name = name;
+	this->performance = performance;
+}
+
+Item Item::operator+(Item i) {
+	Item c;
+	c.name = "조합 성공 아이템";
+	c.performance = this->performance + i.performance;
+	return c;
+}
+
+Item User::combinate(Item a, Item b) {
+	int validLuck;
+	if (isBurning) {
+		validLuck = this->luck + 10;
+		cout << "버닝 이벤트 적용" << endl;
+		if (validLuck > 100) validLuck = 100;
 	}
-	virtual void attack() const { return; }
-	void defend() { cout << name << " : 방어" << endl; }
-	virtual void combinate() const { return; }
-
-private:
-	int level;
-	int money;
-	int luck;
-	static bool isBurning;
-};
-
-class Warrior : User {
-public:
-	Warrior(string name, int level, int money, int luck)
-		: User(name, level, money, luck) {}
-	void attack() {
-		cout << name << " : 검 휘두르기" << endl;
+	else {
+		validLuck = this->luck;
 	}
-};
-class Magician : User {
-public:
-	Magician(string name, int level, int money, int luck)
-		: User(name, level, money, luck) {}
-	void attack() {
-		cout << name << " : 마법 쓰기" << endl;
+
+	int randLuck = 0;
+	srand((unsigned int)time(NULL));
+	randLuck = rand() % 100;
+
+	if (randLuck < validLuck) {
+		cout << "조합 성공!" << endl;
+		return a + b;
 	}
-};
-class Archer : User {
-public:
-	Archer(string name, int level, int money, int luck)
-		: User(name, level, money, luck) {}
-	void attack() {
-		cout << name << " : 활 쏘기" << endl;
+	else {
+		cout << "조합 실패!" << endl;
+		return Item("조합 실패 아이템", 0);
 	}
-};
+}
 
-class Item {
-	int P; // performance
-	friend User;
+void Manager::openBurningEvent() { User::isBurning = true; }
+void Manager::closeBurningEvent() { User::isBurning = false; }
 
-	int const performance;
-	string const name;
-
-	int getP() const { return P; }
-};
-
-class Manager {
-	string name;
-	friend User;
-	void openBurningEvent() {
-		bool isBurning = true;
-	};
-	void closeBurningEvent() {
-		bool isBurning = false;
-	}
-};
