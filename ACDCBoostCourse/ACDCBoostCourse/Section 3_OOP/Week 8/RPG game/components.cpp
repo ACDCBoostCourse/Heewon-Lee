@@ -12,17 +12,22 @@ User::User(const string name, int level, int money, int luck) {
 }
 string User::Username() { return name; }
 
-void User::defend(){ cout << Username() << " : 방어" << endl; }
+void User::defend() { cout << Username() << " : 방어" << endl; }
+void Warrior::defend(){ cout << Username() << " : 방어" << endl; }
+void Magician::defend() { cout << Username() << " : 방어" << endl; }
+void Archer::defend() { cout << Username() << " : 방어" << endl; }
+
 void Warrior::attack() { cout << Username() << " : 검 휘두르기" << endl; }
 void Magician::attack() { cout << Username() << " : 마법 쓰기" << endl; }
 void Archer::attack() { cout << Username() << " : 활 쏘기" << endl; }
-
-int Item::GetPerformance() { return performance; }
 
 Item::Item(string name, int performance) {
 	this->name = name;
 	this->performance = performance;
 }
+
+int Item::GetPerformance() { return performance; }
+
 
 Item Item::operator+(Item i) {
 	Item c;
