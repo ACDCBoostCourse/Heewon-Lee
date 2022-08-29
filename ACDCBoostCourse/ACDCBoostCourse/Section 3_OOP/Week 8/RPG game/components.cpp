@@ -1,4 +1,4 @@
-#include "components.h"
+ï»¿#include "components.h"
 #include <cstdlib>
 #include <ctime>
 
@@ -12,14 +12,14 @@ User::User(const string name, int level, int money, int luck) {
 }
 string User::Username() { return name; }
 
-void User::defend() { cout << Username() << " : ¹æ¾î" << endl; }
-void Warrior::defend(){ cout << Username() << " : ¹æ¾î" << endl; }
-void Magician::defend() { cout << Username() << " : ¹æ¾î" << endl; }
-void Archer::defend() { cout << Username() << " : ¹æ¾î" << endl; }
+void User::defend() { cout << Username() << " : ë°©ì–´" << endl; }
+void Warrior::defend(){ cout << Username() << " : ë°©ì–´" << endl; }
+void Magician::defend() { cout << Username() << " : ë°©ì–´" << endl; }
+void Archer::defend() { cout << Username() << " : ë°©ì–´" << endl; }
 
-void Warrior::attack() { cout << Username() << " : °Ë ÈÖµÎ¸£±â" << endl; }
-void Magician::attack() { cout << Username() << " : ¸¶¹ý ¾²±â" << endl; }
-void Archer::attack() { cout << Username() << " : È° ½î±â" << endl; }
+void Warrior::attack() { cout << Username() << " : ê²€ íœ˜ë‘ë¥´ê¸°" << endl; }
+void Magician::attack() { cout << Username() << " : ë§ˆë²• ì“°ê¸°" << endl; }
+void Archer::attack() { cout << Username() << " : í™œ ì˜ê¸°" << endl; }
 
 Item::Item(string name, int performance) {
 	this->name = name;
@@ -31,7 +31,7 @@ int Item::GetPerformance() { return performance; }
 
 Item Item::operator+(Item i) {
 	Item c;
-	c.name = "Á¶ÇÕ ¼º°ø ¾ÆÀÌÅÛ";
+	c.name = "ì¡°í•© ì„±ê³µ ì•„ì´í…œ";
 	c.performance = this->performance + i.performance;
 	return c;
 }
@@ -40,7 +40,7 @@ Item User::combinate(Item a, Item b) {
 	int validLuck;
 	if (isBurning) {
 		validLuck = this->luck + 10;
-		cout << "¹ö´× ÀÌº¥Æ® Àû¿ë" << endl;
+		cout << "ë²„ë‹ ì´ë²¤íŠ¸ ì ìš©" << endl;
 		if (validLuck > 100) validLuck = 100;
 	}
 	else {
@@ -52,12 +52,12 @@ Item User::combinate(Item a, Item b) {
 	randLuck = rand() % 100;
 
 	if (randLuck < validLuck) {
-		cout << "Á¶ÇÕ ¼º°ø!" << endl;
+		cout << "ì¡°í•© ì„±ê³µ!" << endl;
 		return a + b;
 	}
 	else {
-		cout << "Á¶ÇÕ ½ÇÆÐ!" << endl;
-		return Item("Á¶ÇÕ ½ÇÆÐ ¾ÆÀÌÅÛ", 0);
+		cout << "ì¡°í•© ì‹¤íŒ¨!" << endl;
+		return Item("ì¡°í•© ì‹¤íŒ¨ ì•„ì´í…œ", 0);
 	}
 }
 

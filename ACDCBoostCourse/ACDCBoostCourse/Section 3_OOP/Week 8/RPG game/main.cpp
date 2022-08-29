@@ -1,18 +1,18 @@
-#include "components.h"
+ï»¿#include "components.h"
 
 int main() {
-	Warrior Warrior("Àü»ç", 10, 1000, 30);
-	Magician Magician("¸¶¹ı»ç", 20, 2000, 50);
-	Archer Archer("±Ã¼ö", 30, 3000, 70);
+	Warrior Warrior("ì „ì‚¬", 10, 1000, 30);
+	Magician Magician("ë§ˆë²•ì‚¬", 20, 2000, 50);
+	Archer Archer("ê¶ìˆ˜", 30, 3000, 70);
 
-	Manager Manager("½Ã½ºÅÛ");
+	Manager Manager("ì‹œìŠ¤í…œ");
 
-	Item warrior1("°Ë1", 10);
-	Item warrior2("°Ë2", 25);
-	Item magician1("¸¶¹ı1", 20);
-	Item magician2("¸¶¹ı2", 35);
-	Item archer1("È°1", 30);
-	Item archer2("È°2", 45);
+	Item warrior1("ê²€1", 10);
+	Item warrior2("ê²€2", 25);
+	Item magician1("ë§ˆë²•1", 20);
+	Item magician2("ë§ˆë²•2", 35);
+	Item archer1("í™œ1", 30);
+	Item archer2("í™œ2", 45);
 
 	Warrior.attack();
 	Warrior.defend();

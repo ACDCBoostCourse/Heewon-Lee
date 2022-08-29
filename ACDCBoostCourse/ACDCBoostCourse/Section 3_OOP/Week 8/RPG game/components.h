@@ -1,4 +1,4 @@
-#ifndef _COMPONENTS_H
+﻿#ifndef _COMPONENTS_H
 #define _COMPONENTS_H
 #include <iostream>
 #include <string>
